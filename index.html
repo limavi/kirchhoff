@@ -43,6 +43,7 @@
 		</tr>
 	  	<tr aling="left">
 	  		<th aling="left">
+	  			<!-- CIRCUITO #1 -->
 				<form name="formCircuito1">
 					<label>R1: </label><input ng-model="circuito1.R1" type="number" ng-required="true"> Ω<br>
 					<label>R2: </label><input ng-model="circuito1.R2" type="number" ng-required="true"> Ω<br>
@@ -60,6 +61,7 @@
 				<label>I3: </label><input type="text" ng-model="circuito1.i3" ng-disabled="true"> <br>
 	  		</th>
 			<th aling="left">
+				<!-- CIRCUITO #2 -->
 				<form name="formCircuito2">
 					<label>R1: </label><input ng-model="circuito2.R1" type="number" ng-required="true"> Ω<br>
 					<label>R2: </label><input ng-model="circuito2.R2" type="number" ng-required="true"> Ω<br>
@@ -69,18 +71,14 @@
 					<input type="submit" value="Calcular" ng-click="CalcularCircuito2(circuito2)" ng-disabled="!formCircuito2.$valid">
 					<input type="button" value="limpiar" ng-click="limpiarFormCircuito2()">
 				</form><br>
-				<label>LVK #1: </label><input type="text" ng-model="lvk1" ng-disabled="true"> <br>
-				<label>LVK #2: </label><input type="text" ng-model="lvk2" ng-disabled="true"> <br><br>
-				<label>I1: </label><input type="text" ng-model="circuito1.i1" ng-disabled="true"> <br>
-				<label>I2: </label><input type="text" ng-model="circuito1.i2" ng-disabled="true"> <br>
-				<label>I3: </label><input type="text" ng-model="circuito1.i3" ng-disabled="true"> <br>
+				<label>LVK #1: </label><input type="text" ng-model="circuito2.lvk1" ng-disabled="true"> <br>
+				<label>LVK #2: </label><input type="text" ng-model="circuito2.lvk2" ng-disabled="true"> <br><br>
+				<label>I1: </label><input type="text" ng-model="circuito2.i1" ng-disabled="true"> <br>
+				<label>I2: </label><input type="text" ng-model="circuito2.i2" ng-disabled="true"> <br>
+				<label>I3: </label><input type="text" ng-model="circuito2.i3" ng-disabled="true"> <br>
 	  		</th>
 		</tr>
 	</table>
- 
-
-	
-	
 </body>
 <footer>
 	<h3 align="center">Corporacion Universitaria del Huila (CORHUILA) - Análisis de Circuitos.</h3>
