@@ -15,32 +15,3 @@ body{
 	padding-right: 5px;
 	background: #dedede;
 }
-
-.filtroLibros{
-	width:200px;
-}
-
-.buscarLibros{
- 	font-weight: bolder;
-}
-
-.tablaLibros {
-	color:#333333;
-	border-width: 1px;
-	border-color: #666666;
-	border-collapse: collapse;
-}
-.tablaLibros th {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: #dedede;
-}
-.tablaLibros td {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: #ffffff;
-}

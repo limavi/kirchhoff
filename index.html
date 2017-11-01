@@ -11,7 +11,6 @@
   <script src="app/js/controllers.js"></script>  
 </head>
 <body ng-controller="TodosLosLibrosCtrl">
-	
 	<h1 align="center">Leyes de Kirchhoff</h1>
 	<table style="width:100%">
   		<tr>
@@ -26,61 +25,66 @@
   			<th>La corriente que circula hacia un nodo o punto de derivación es igual a la suma de las corrientes que abandonan el nodo o derivación.</th>
   		    <th>La suma algebraica de las diferencias de potencial a lo largo de cualquier camino cerrado del circuito es cero.</th>
   		</tr>
-  	</table>	
+  	</table>
+
+	<h2 align="center">-------------------------------------------------------------------------------------------- * Ejercicios * -------------------------------------------------------------------------------------</h2>
 
 
   	<table style="width:100%">
 	  	<tr>
 		  	<th>
-		  		<h2>Ejercicio 1</h2>
+		  		<h2>Ejercicio #1</h2>
 		  		<img src="app/images/Circuito1.png"  style="width:500px;height:350px;">
 		  	</th>
 			<th>
-				<h2>Ejercicio 2</h2>
-		  		<img src="app/images/Circuito1.png"  style="width:500px;height:350px;">
-		  	</th>
-			<th>
-				<h2>Ejercicio 3</h2>
-		  		<img src="app/images/Circuito1.png"  style="width:500px;height:350px;">
+				<h2>Ejercicio #2</h2>
+		  		<img src="app/images/Circuito2.png"  style="width:400px;height:300px;">
 		  	</th>
 		</tr>
 	  	<tr aling="left">
 	  		<th aling="left">
 				<form name="formCircuito1">
-					<label>R1: </label><input name="circuito1R1" ng-model="circuito1.R1" type="number" ng-required="true"> Ω<br>
-					<label>R2: </label><input name="circuito1R2" ng-model="circuito1.R2" type="number" ng-required="true"> Ω<br>
-					<label>R3: </label><input name="circuito1R3" ng-model="circuito1.R3" type="number" ng-required="true"> Ω<br><br>
-
-					<label>V1: </label><input name="circuito1V1" ng-model="circuito1.V1" type="number" ng-required="true"> V<br>
-					<label>V2: </label><input name="circuito1V2" ng-model="circuito1.V2" type="number" ng-required="true"> V<br>
-					<label>V3: </label><input name="circuito1V3" ng-model="circuito1.V3" type="number" ng-required="true"> V<br><br>
+					<label>R1: </label><input ng-model="circuito1.R1" type="number" ng-required="true"> Ω<br>
+					<label>R2: </label><input ng-model="circuito1.R2" type="number" ng-required="true"> Ω<br>
+					<label>R3: </label><input ng-model="circuito1.R3" type="number" ng-required="true"> Ω<br><br>
+					<label>V1: </label><input ng-model="circuito1.V1" type="number" ng-required="true"> V<br>
+					<label>V2: </label><input ng-model="circuito1.V2" type="number" ng-required="true"> V<br>
+					<label>V3: </label><input ng-model="circuito1.V3" type="number" ng-required="true"> V<br><br>
 					<input type="submit" value="Calcular" ng-click="CalcularCircuito1(circuito1)" ng-disabled="!formCircuito1.$valid">
 					<input type="button" value="limpiar" ng-click="limpiarFormCircuito1()">
 				</form><br>
-
-				<label>LVK #1: </label><input type="text" ng-model="lvk1" ng-disabled="true"> => <input type="text" ng-model="result" ng-disabled="true"><br>
-				<label>LVK #2: </label><input type="text" ng-model="lvk2" ng-disabled="true"> => <input name="circuito1result2" type="text" ng-disabled="true"><br>
+				<label>LVK #1: </label><input type="text" ng-model="circuito1.lvk1" ng-disabled="true"> <br>
+				<label>LVK #2: </label><input type="text" ng-model="circuito1.lvk2" ng-disabled="true"> <br><br>
+				<label>I1: </label><input type="text" ng-model="circuito1.i1" ng-disabled="true"> <br>
+				<label>I2: </label><input type="text" ng-model="circuito1.i2" ng-disabled="true"> <br>
+				<label>I3: </label><input type="text" ng-model="circuito1.i3" ng-disabled="true"> <br>
 	  		</th>
-	  		<th>
-	  			<h2>SOLUCION 2</h2>
-	  		</th>
-	  		<th>
-	  			<h2>SOLUCION 3</h2>
+			<th aling="left">
+				<form name="formCircuito2">
+					<label>R1: </label><input ng-model="circuito2.R1" type="number" ng-required="true"> Ω<br>
+					<label>R2: </label><input ng-model="circuito2.R2" type="number" ng-required="true"> Ω<br>
+					<label>R3: </label><input ng-model="circuito2.R3" type="number" ng-required="true"> Ω<br><br>
+					<label>V1: </label><input ng-model="circuito2.V1" type="number" ng-required="true"> V<br>
+					<label>V2: </label><input ng-model="circuito2.V2" type="number" ng-required="true"> V<br>
+					<input type="submit" value="Calcular" ng-click="CalcularCircuito2(circuito2)" ng-disabled="!formCircuito2.$valid">
+					<input type="button" value="limpiar" ng-click="limpiarFormCircuito2()">
+				</form><br>
+				<label>LVK #1: </label><input type="text" ng-model="lvk1" ng-disabled="true"> <br>
+				<label>LVK #2: </label><input type="text" ng-model="lvk2" ng-disabled="true"> <br><br>
+				<label>I1: </label><input type="text" ng-model="circuito1.i1" ng-disabled="true"> <br>
+				<label>I2: </label><input type="text" ng-model="circuito1.i2" ng-disabled="true"> <br>
+				<label>I3: </label><input type="text" ng-model="circuito1.i3" ng-disabled="true"> <br>
 	  		</th>
 		</tr>
 	</table>
  
 
-
-<br>
-<br>
-<br>
 	
 	
 </body>
 <footer>
-	<h4 align="center">Corporacion Universitaria del Huila (CORHUILA) - Taller de Análisis de Circuitos.</h4>
-	<h4 align="center">Rafael Manjarres Villanueva</h4>
+	<h3 align="center">Corporacion Universitaria del Huila (CORHUILA) - Análisis de Circuitos.</h3>
+	<h2 align="center">Rafael Manjarres Villanueva</h2>
 </footer>
 </html>
 
