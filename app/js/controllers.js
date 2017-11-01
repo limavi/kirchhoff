@@ -3,8 +3,11 @@
 
     // CIRCUITO #1
 	 $scope.CalcularCircuito1 = function(circuito1) {
+        //AQUI SE ARMA LA DESCRIPCION DE COMO FUE RECORRIDO EL CIRCUITO
 	 	$scope.circuito1.lvk1= circuito1.V1 + "  +  " + circuito1.R1 +"I1  -  " +  circuito1.V2 + "    -  " + circuito1.R2 + "I2 = 0"
 	 	$scope.circuito1.lvk2= circuito1.V1 + "  +  " + circuito1.R1 +"I1  +  " +  circuito1.R3 + "I3  -  " + circuito1.V3  + "= 0"
+        
+        //AQUI SE ARMAN LAS FUNCIONES SEGUN LOS VALORES QUE SE HAYAN INGRESADO POR PANTALLA
         var F1={I1:1, I2:1, I3:-1, Result:0}
      	var F2={
      		I1:circuito1.R1,
@@ -32,8 +35,11 @@
 
     // CIRCUITO #2
     $scope.CalcularCircuito2 = function(circuito2) {
+        //AQUI SE ARMA LA DESCRIPCION DE COMO FUE RECORRIDO EL CIRCUITO
         $scope.circuito2.lvk1= "-" + circuito2.V1 + "  +  " + circuito2.R1 +"I1  -  " +  circuito2.R3 + "(I1 - I2)   = 0 " 
         $scope.circuito2.lvk2= circuito2.R3 + "(I2 - I1) +  " + circuito2.R2 +"I2  -  " + circuito2.V2  + " = 0 "
+        
+        //AQUI SE ARMAN LAS FUNCIONES SEGUN LOS VALORES QUE SE HAYAN INGRESADO POR PANTALLA
         var F1={I1:-1, I2:1, I3:1, Result:0}
         var F2={
             I1:circuito2.R1 + circuito2.R3 ,
