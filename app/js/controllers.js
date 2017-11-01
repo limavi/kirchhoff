@@ -1,5 +1,5 @@
   angular.module('ModuleApp', [])
-    .controller('TodosLosLibrosCtrl', ['$scope', function($scope) {
+    .controller('kirchhoffCtrl', ['$scope', function($scope) {
 
     // CIRCUITO #1
 	 $scope.CalcularCircuito1 = function(circuito1) {
